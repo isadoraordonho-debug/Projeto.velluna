@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Italiana", sans-serif;
+}
+
+
+body {
+    background-color: #F6EBE1
+}
+
+header {
+    background-color: #7B3314;
+    height: 80px;
+}
+
+.pagina_inicial{
+    width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    left: 100px;
+    color: #ffffff;
+}
+
+.colecao{
+     width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    left: 100px;
+    color: #ffffff;
+
+}
+
+.cadastro{
+     width: 90%;
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    left: 100px;
+    color: #ffffff;
+
+}

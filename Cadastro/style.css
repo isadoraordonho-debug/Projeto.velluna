@@ -1,18 +1,19 @@
 * {
     padding: 0;
-    margin: 0;
+
     box-sizing: border-box;
     font-family: "Bellota", system-ui;
     /* background-color: blueviolet; */
 }
 
 
-:root{
+:root {
     ---corPrincipal: #7B3314;
     ---arredondamento: 10px;
     --sobra: 0 4px 4px 2px #00000025;
 }
-  /* font-family: "Baskervville", serif;
+
+/* font-family: "Baskervville", serif;
    font-family: "Instrument Sans", sans-serif; */
 body {
     background-color: #F6EBE1;
@@ -33,10 +34,32 @@ header {
 }
 
 /* cadastro */
-.container_cadastro{
+
+.container_de_cadastro {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.container_cadastro {
+    border-radius: 10px;
+    max-width: 1440px;
+    width: 90%;
     background-color: #FFFAF6;
 }
 
+.titulo {
+    color: #5B2F10;
+    font-family: "Italiana", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 48px;
+    margin-top: 50px;
+    text-align: center;
+    text-emphasis-color: #5B2F10;
+}
 
 .container_lista,
 .container_cadastro {
@@ -44,13 +67,15 @@ header {
     flex-direction: column;
     align-items: center;
 }
+
 .container_cadastro h2 {
     font-family: "Italiana", sans-serif;
     font-weight: 100;
-    font-style: normal;}
-    
-    .container_lista h2,
-    .container_cadastro h2 {
+    font-style: normal;
+}
+
+.container_lista h2,
+.container_cadastro h2 {
     font-size: 48px;
     margin-top: 100px;
 
@@ -66,10 +91,10 @@ header {
     border: none;
     background-color: var(---corPrincipal);
     margin-bottom: 75px;
-    
+
 }
 
-.box_cadastro{
+.box_cadastro {
     display: flex;
     justify-content: space-between;
     width: 90%;
@@ -77,73 +102,81 @@ header {
 
 }
 
-.box_cadastro label{
-   font-size: 20px;
+.box_cadastro label {
+    font-size: 20px;
 
 }
 
-.cadastro_coluna1{
+.cadastro_coluna1 {
     /* background-color: rgb(217, 255, 0); */
     width: 45%;
+    font-family: "Baskervville", serif;
+
 }
 
 .vela,
 .categoria,
 .img,
-.cadastro_coluna2{
+.cadastro_coluna2 {
     display: flex;
     flex-direction: column;
 }
 
-.cadastro_coluna2{
+.cadastro_coluna2 {
     /*background-color: rgb(0, 255, 98);*/
     width: 45%;
 }
 
-.categoria_img{
+.categoria_img {
     display: flex;
     justify-content: space-between;
 }
-.valor_peso{
+
+.valor_peso {
     display: flex;
     /* background-color: lightseagreen; */
     justify-content: space-between;
 }
 
 .box_cadastro input[type="text"],
-.box_cadastro textarea{
+.box_cadastro textarea {
     border-radius: 10px;
     border: solid 1px #b3b3b3;
     margin-bottom: 20px;
     font-size: 18px;
     padding: 0 5px;
 }
-.box_cadastro input[type="text"]{
+
+.box_cadastro input[type="text"] {
+    color: #fff;
     height: 40px;
     border-radius: 10px;
+    align-items: center;
+
 }
 
-.categoria{
+.categoria {
     width: 70%;
 }
 
-.box_cadastro textarea{
-    height: 200px;
+.box_cadastro textarea {
+    height: 150px;
     resize: none;
 }
 
-.img{
+.img {
     width: 20%;
 }
 
-.img svg{
+.img svg {
     width: 30px;
 }
 
-input[type="file"]{
-   justify-items: center;
+input[type="file"] {
+    display: none;
 }
-.img div{
+
+.img div {
     background-color: #ffffff;
     border-radius: 10px;
     border: solid 1px #b3b3b3;
@@ -155,7 +188,8 @@ input[type="file"]{
 }
 
 
-input[type="button"]{
+input[type="button"] {
+    color: #fff;
     align-items: center;
     font-size: 26px;
     margin: 50px 0px;
@@ -165,5 +199,26 @@ input[type="button"]{
     padding: 10px 200px;
     box-shadow: var(--sobra);
     cursor: pointer;
+
+}
+
+      @media screen and (max-width: 1000px){
+        table{
+            width: 98%;
+        }
+    }
+    @media screen and (max-width: 758px){
+        .box_cadastro{
+            flex-direction: column;
+        }
+        .cadastro_coluna1,
+        .cadastro_coluna2{
+            width: 100%;
+        }
+        input[type="button"]{
+            
+            padding: 10px 100px;
+        }
+        
 
 }

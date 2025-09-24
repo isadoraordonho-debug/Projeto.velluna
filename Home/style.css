@@ -3,6 +3,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: "Italiana", sans-serif;
+    font-weight: 200;
 }
 
 
@@ -15,31 +16,94 @@ header {
     height: 80px;
 }
 
-.pagina_inicial{
+.cabecalho_vela img {
+    position: relative;
+}
+
+.cabecalho_vela img {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+
+}
+
+.cabecalho_vela h2 {
+    position: absolute;
+    color: #ffffff;
+    top: 200px;
+    font-size: 150px;
+    right: 355px;
+    justify-content: center;
+}
+
+.cabecalho_vela h3 {
+    position: absolute;
+    color: #ffffff;
+    font-size: 60px;
+    right: 400px;
+    justify-content: center;
+    right: 50px;
+    top: 350px;
+}
+
+
+
+.pagina_inicial {
     width: 90%;
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
     left: 100px;
     color: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 20px;
+    align-items: center;
+
 }
 
-.colecao{
-     width: 90%;
+.colecao {
+    gap: 50px;
+    width: 90%;
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
     left: 100px;
     color: #ffffff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 80px;
+    padding: 0 15px;
+    font-weight: 200px;
+    font-size: 25px;
 
 }
 
-.cadastro{
-     width: 90%;
+.cadastro {
+    width: 90%;
     max-width: 1440px;
     margin: 0 auto;
     display: flex;
     left: 100px;
     color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 6px;
+    height: 80px;
+    padding: 0 15px;
+    font-weight: 200px;
+
+}
+
+
+.container_cabecalho svg {
+    height: 35px;
+    fill: #b0b0b0;
+    cursor: pointer;
 
 }

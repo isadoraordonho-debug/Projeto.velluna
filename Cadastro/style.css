@@ -236,7 +236,7 @@ td{
     justify-content: center;
     width: 100%;
     max-width: 100%;
-    background-color: #ffd188;
+    background-color: #7B3314;
     height: 50px;
     align-items: center;
 }
@@ -304,6 +304,8 @@ margin-bottom:  100px ;
 
     }
 
-    .footer{
-        background-color: #7B3314;
-    }
+/*RODAPÉ*/
+.footer{
+    width: 100%;
+    background-color: #7B3314;
+}

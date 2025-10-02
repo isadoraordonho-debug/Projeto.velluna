@@ -27,9 +27,11 @@ header {
     top: 0;
     left: 0;
 
-    margin: 20px 20px;
-    align-items: center;
+    margin: 0px 20px;
 
+}
+h1 {
+    margin-top: 20px;
 }
 
 .colecao {
@@ -62,7 +64,7 @@ header {
     margin-bottom: 100px;
 }
 
-.banner .cabecalho_vela{
+.banner .cabecalho_vela {
     width: 50%;
     color: #ffffff;
     display: flex;
@@ -70,42 +72,56 @@ header {
     justify-content: center;
 }
 
-.banner .cabecalho_vela span:first-child{
-    font-size: 156px;
+.banner .cabecalho_vela img {
+    width: 90%;
 }
 
-.banner .cabecalho_vela span:last-child{
-    font-size: 64px;
+.banner .cabecalho_vela span:first-child {
+    font-size: 140px;
+}
+
+.banner .cabecalho_vela span:last-child {
+    font-size: 50px;
     margin-left: 150px;
 }
 
 .colecao_outono {
 
     display: flex;
-    max-height: 300px;
-       margin: 0 150px;
-    gap: 10rem;
+    margin: 0 auto;
+    gap: 10%;
+    flex-wrap: wrap;
 }
+
+.colecao_outono img {
+    width: 45%;
+    aspect-ratio: 1.32;
+}
+
 
 .colecao_outono div {
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 600px;
+    justify-content: space-evenly;
+    width: 45%;
+    max-width: 600px;
 
 }
 
 .colecao_outono h2 {
-    font-size: 60px;
+    font-size: 49px;
     font-family: "Baskervville", serif;
     color: #712708;
 
 }
 
 .colecao_outono p {
-    font-size: 40px;
+    font-size: 29px;
     font-family: "Baskervville", serif;
-    
+    text-align: center;
+    margin-top: 20px;
+
 
 }
 
@@ -119,14 +135,26 @@ header {
 
 .container_estacoes {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     gap: 2%;
     margin-top: 115px;
-    max-height: 800px;
-
+    flex-wrap: wrap;
 }
 
+.estacoes_col1,
+.estacoes_col2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 45%;
+    gap: 3%;
+}
+
+.estacoes_col1 img,
+.estacoes_col2 img {
+    width: 45%;
+    aspect-ratio: 0.47;
+
+}
 
 footer {
     width: 100%;
@@ -139,10 +167,86 @@ footer {
 }
 
 
-@media screen and (max-width: 1150px) {
+@media screen and (max-width: 1200px) {
+    .banner .cabecalho_vela span:first-child {
+        font-size: 100px;
+    }
 
-.colecao_outono{
-    flex-wrap: wrap;
+    .banner .cabecalho_vela span:last-child {
+        font-size: 36px;
+    }
+
+    .colecao_outono h2 {
+        font-size: 36px;
+    }
+
+    .colecao_outono p {
+        font-size: 22px;
+    }
+
+
+    .colecao_outono {
+        flex-wrap: wrap;
+        width: 90%;
+        max-width: 1100px;
+    }
+
 }
 
+@media screen and (max-width: 960px) {
+    .banner .cabecalho_vela span:first-child {
+        font-size: 80px;
+    }
+
+    .banner .cabecalho_vela span:last-child {
+        font-size: 28px;
+    }
+
+
+
 }
+
+@media screen and (max-width: 768px) {
+    .colecao_outono {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .colecao_outono img{
+        margin-bottom: 50px;
+        width: 90%;
+        max-width: 310px;
+    }
+    
+    .colecao_outono div{
+        width: 90%;
+        max-width: 400px;
+    }
+
+    .container_estacoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .estacoes_col1 {
+        margin-bottom: 50px;
+    }
+
+    .estacoes_col1,
+    .estacoes_col2 {
+        width: 90%;
+        max-width: 600px;
+    }
+
+}
+
+@media screen and (max-width: 420px) {
+    .colecao{
+        gap: 10px;
+        align-items: center;
+        display: flex;
+        position: absolute;
+       
+    }
+    }
+

@@ -28,6 +28,10 @@ header {
     justify-content: end;
 }
 
+.container_cabecalho {
+    display: flex;
+}
+
 .menu_barras {
     width: 50px;
     color: #ffffff;
@@ -52,6 +56,7 @@ header {
 }
 
 .colecao {
+
     gap: 50px;
     width: 90%;
     max-width: 1440px;
@@ -59,17 +64,23 @@ header {
     display: flex;
     left: 100px;
     color: #ffffff;
-    display: flex;
+
     justify-content: flex-end;
     align-items: center;
     height: 80px;
-    padding: 0 15px;
+
     font-size: 25px;
     z-index: 3;
 }
 
+.colecao p {
+    cursor: pointer;
+}
+
 .lupa_k {
     width: 35px;
+    cursor: pointer;
+
 }
 
 
@@ -80,7 +91,7 @@ header {
 
 svg {
     height: 50px;
-    
+
 }
 
 .acessivel {
@@ -149,6 +160,12 @@ footer img {
         padding: 25px;
     }
 
+    .logo {
+        margin-top: 5px;
+        height: 30px;
+        width: 100px;
+    }
+
     .pagina_produtos {
         padding: 10px;
         position: fixed;
@@ -170,8 +187,9 @@ footer img {
 
 
     .colecao p {
-        top: -100px;
-
+        margin-top: 10px;
+        height: 30px;
+        width: 100px;
     }
 
     .cardis {

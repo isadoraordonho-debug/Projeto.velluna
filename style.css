@@ -50,7 +50,7 @@ header {
 }
 
 .logo {
-    margin-top: 25px;
+    margin: 25px;
     height: 30px;
     width: 100px;
 }
@@ -185,6 +185,9 @@ footer img {
         z-index: 2;
     }
 
+    .colecao {
+        align-items: normal;
+    }
 
     .colecao p {
         margin-top: 10px;
